@@ -78,14 +78,14 @@ mhcflurry-downloads fetch models_class1_presentation
 
 ## Reproducing Primary Manuscript Figures
 
-### Figure 4: mRNA Secondary Profiling & In Silico Cloning
+### Figure: mRNA Secondary Profiling & In Silico Cloning
 ```bash
 python -m src.mrna_kinetics \
   --input data/constructs/candidate_3_optimized_mRNA.fasta \
   --out results/Figure_4_mRNA_and_Plasmid.png
 ```
 
-### Figure 5: Deep Learning Antigen Presentation Screening
+### Figure: Deep Learning Antigen Presentation Screening
 ```bash
 python -m src.immunopeptidomics \
   --epitopes data/immunopeptidomics/screened_epitopes.json \
@@ -94,7 +94,7 @@ python -m src.immunopeptidomics \
   --out-fig results/Figure_5_Immunopeptidomics.png
 ```
 
-### Figure 4 (GNN): Synaptic Topology and Attention Decomposition
+### Figure: Synaptic Topology and Attention Decomposition (GNN)
 ```bash
 python -m src.synapse_gnn \
   --pdb data/structural_models/TCR_pMHC_FLADKKMTL.pdb \
