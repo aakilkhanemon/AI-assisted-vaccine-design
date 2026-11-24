@@ -20,7 +20,7 @@ Official implementation and validation codebase for:
 - **Latent-Space Naturalness (ESM-2):** Structural verification across synthetic linker junctions (EAAAK, AAY, GPGPG) to prevent misfolding and aberrant intracellular proteolysis.
 - **Deep-Learning Immunopeptidomics (MHCflurry 2.0):** Deconvolved intracellular antigen processing (cleavage and TAP transport) from HLA Class I groove binding affinity, prioritizing candidates in the optimal presentation tier (FLADKKMTL, KD = 15.07 nM, 0.002% presentation percentile rank).
 - **Immune Synapse Mechanics (Graph Neural Networks):** Modeled ternary TCR–pMHC physical interactions using geometric graphs with AlphaFold-PAE weighted edges, resolving residue-level edge-attention dynamics across CDR3 loops.
-- **Translational Kinetics & Expression Vector Mapping:** Ensured high-level heterologous expression via ViennaRNA minimum free energy (MFE) simulation, validating an open 5' initiation terminal (ΔG = -11.6 kcal/mol) and in-frame insertion into pET-28a(+).
+- **Translational Kinetics and Expression Vector Mapping:** Ensured high-level heterologous expression via ViennaRNA minimum free energy (MFE) simulation, validating an open 5' initiation terminal (ΔG = -11.6 kcal/mol) and in-frame insertion into pET-28a(+).
 
 ---
 
@@ -53,7 +53,7 @@ Run the validation pipelines interactively via Google Colab:
 | Notebook | Focus Area | Runtime | Badges |
 | :--- | :--- | :--- | :--- |
 | **01: Deep Immunopeptidomics** | MHCflurry Class I presentation and bivariate affinity/cleavage plots | CPU (~3 min) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aakilkhanemon/AI-assisted-vaccine-design/blob/main/notebooks/01_immunopeptidomics_mhcflurry.ipynb) |
-| **02: mRNA Kinetics & Vector Mapping** | ViennaRNA MFE base-pair density and pET-28a(+) plasmid generation | CPU (~2 min) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aakilkhanemon/AI-assisted-vaccine-design/blob/main/notebooks/02_mrna_kinetics_and_cloning.ipynb) |
+| **02: mRNA Kinetics and Vector Mapping** | ViennaRNA MFE base-pair density and pET-28a(+) plasmid generation | CPU (~2 min) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aakilkhanemon/AI-assisted-vaccine-design/blob/main/notebooks/02_mrna_kinetics_and_cloning.ipynb) |
 | **03: TCR-pMHC GNN Dynamics** | Geometric graph attention modeling of the ternary synapse | T4 GPU (~5 min) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aakilkhanemon/AI-assisted-vaccine-design/blob/main/notebooks/03_tcr_pmhc_synapse_gnns.ipynb) |
 
 ---
@@ -78,7 +78,7 @@ mhcflurry-downloads fetch models_class1_presentation
 
 ## Reproducing Primary Manuscript Figures
 
-### Figure: mRNA Secondary Profiling & In Silico Cloning
+### Figure: mRNA Secondary Profiling and In Silico Cloning
 ```bash
 python -m src.mrna_kinetics \
   --input data/constructs/candidate_3_optimized_mRNA.fasta \
